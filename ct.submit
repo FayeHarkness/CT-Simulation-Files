@@ -1,0 +1,565 @@
+##############################################################
+#
+#  Standard script for Condor in ClusterGATE 
+#  Supply this script to the job splitter command line.
+#  following keywords 
+#   GC_EXEC
+#   GC_MACRO
+#  will be replaced by actual values.
+#  Do not remove any of them! 
+#
+#  The user can edit anything before the "#GJS PART"  
+#  except the line with $GC_EXEC
+#
+#  JDB 3.8.2005
+#    
+##############################################################                                                
+                                                                         
+Executable     = /home/s1838834/GATE/bin/Gate
+universe       = vanilla
+getenv         = True
+#Requirements   = Memory >= 512 && Arch =="INTEL"     
+#Rank	       = Memory >= 512
+#Image_Size     = 28 Meg     
+  
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct1.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct1.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct1.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct1.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct2.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct2.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct2.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct2.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct3.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct3.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct3.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct3.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct4.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct4.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct4.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct4.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct5.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct5.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct5.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct5.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct6.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct6.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct6.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct6.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct7.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct7.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct7.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct7.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct8.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct8.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct8.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct8.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct9.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct9.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct9.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct9.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct10.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct10.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct10.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct10.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct11.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct11.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct11.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct11.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct12.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct12.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct12.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct12.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct13.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct13.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct13.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct13.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct14.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct14.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct14.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct14.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct15.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct15.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct15.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct15.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct16.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct16.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct16.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct16.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct17.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct17.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct17.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct17.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct18.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct18.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct18.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct18.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct19.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct19.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct19.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct19.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct20.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct20.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct20.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct20.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct21.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct21.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct21.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct21.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct22.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct22.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct22.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct22.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct23.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct23.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct23.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct23.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct24.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct24.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct24.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct24.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct25.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct25.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct25.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct25.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct26.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct26.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct26.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct26.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct27.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct27.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct27.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct27.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct28.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct28.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct28.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct28.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct29.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct29.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct29.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct29.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct30.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct30.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct30.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct30.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct31.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct31.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct31.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct31.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct32.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct32.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct32.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct32.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct33.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct33.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct33.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct33.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct34.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct34.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct34.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct34.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct35.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct35.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct35.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct35.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct36.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct36.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct36.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct36.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct37.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct37.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct37.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct37.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct38.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct38.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct38.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct38.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct39.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct39.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct39.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct39.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct40.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct40.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct40.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct40.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct41.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct41.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct41.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct41.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct42.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct42.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct42.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct42.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct43.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct43.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct43.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct43.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct44.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct44.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct44.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct44.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct45.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct45.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct45.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct45.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct46.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct46.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct46.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct46.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct47.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct47.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct47.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct47.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct48.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct48.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct48.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct48.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct49.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct49.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct49.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct49.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct50.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct50.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct50.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct50.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct51.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct51.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct51.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct51.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct52.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct52.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct52.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct52.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct53.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct53.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct53.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct53.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct54.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct54.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct54.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct54.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct55.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct55.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct55.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct55.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct56.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct56.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct56.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct56.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct57.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct57.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct57.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct57.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct58.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct58.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct58.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct58.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct59.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct59.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct59.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct59.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct60.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct60.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct60.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct60.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct61.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct61.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct61.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct61.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct62.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct62.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct62.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct62.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct63.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct63.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct63.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct63.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct64.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct64.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct64.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct64.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct65.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct65.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct65.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct65.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct66.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct66.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct66.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct66.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct67.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct67.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct67.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct67.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct68.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct68.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct68.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct68.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct69.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct69.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct69.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct69.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct70.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct70.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct70.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct70.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct71.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct71.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct71.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct71.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct72.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct72.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct72.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct72.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct73.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct73.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct73.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct73.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct74.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct74.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct74.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct74.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct75.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct75.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct75.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct75.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct76.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct76.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct76.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct76.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct77.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct77.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct77.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct77.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct78.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct78.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct78.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct78.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct79.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct79.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct79.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct79.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct80.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct80.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct80.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct80.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct81.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct81.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct81.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct81.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct82.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct82.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct82.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct82.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct83.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct83.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct83.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct83.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct84.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct84.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct84.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct84.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct85.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct85.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct85.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct85.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct86.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct86.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct86.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct86.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct87.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct87.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct87.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct87.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct88.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct88.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct88.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct88.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct89.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct89.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct89.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct89.log
+Queue
+
+Arguments      = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct90.mac
+Output         = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct90.out
+Error          = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct90.err
+Log            = /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/.Gate/ct17/ct90.log
+Queue
+

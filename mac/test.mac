@@ -1,0 +1,83 @@
+/gate/geometry/setMaterialDatabase /home/s1606384/GATE-build/Gate-8.2/FBCT_phantom/data/MashMaterialDatabase.db
+
+/control/execute viewer.mac
+/control/execute fash.mac
+# World
+/gate/world/geometry/setXLength 500. cm
+/gate/world/geometry/setYLength 500. cm
+/gate/world/geometry/setZLength 500. cm
+/gate/world/setMaterial Air
+/gate/world/vis/forceWireframe
+/gate/world/vis/setColor black
+
+#Collimator
+/gate/world/daughters/name collimator1
+/gate/world/daughters/insert box
+/gate/collimator1/geometry/setXLength  60. cm
+/gate/collimator1/geometry/setYLength  30.0 cm
+/gate/collimator1/geometry/setZLength   1. cm
+/gate/collimator1/placement/setTranslation 0. 15.001 -70. cm
+/gate/collimator1/setMaterial Lead
+/gate/collimator1/vis/forceWireframe
+/gate/collimator1/vis/setColor blue
+
+/gate/world/daughters/name collimator2
+/gate/world/daughters/insert box
+/gate/collimator2/geometry/setXLength  60. cm
+/gate/collimator2/geometry/setYLength  30.0 cm
+/gate/collimator2/geometry/setZLength   1. cm
+/gate/collimator2/placement/setTranslation 0. -15.001 -70. cm
+/gate/collimator2/setMaterial Lead
+/gate/collimator2/vis/forceWireframe
+/gate/collimator2/vis/setColor blue
+
+# CTscanner system 
+/gate/world/daughters/name CTscanner
+/gate/world/daughters/insert box
+/gate/CTscanner/geometry/setXLength  1040. mm
+/gate/CTscanner/geometry/setYLength  1040. mm
+/gate/CTscanner/geometry/setZLength   2. mm
+/gate/CTscanner/placement/setTranslation 0. 0. 80. cm
+/gate/CTscanner/setMaterial Air
+/gate/CTscanner/vis/forceWireframe
+/gate/CTscanner/vis/setColor white
+
+# Module 
+/gate/CTscanner/daughters/name module
+/gate/CTscanner/daughters/insert box
+/gate/module/geometry/setXLength  1040. mm
+/gate/module/geometry/setYLength  1040. mm
+/gate/module/geometry/setZLength   2. mm
+/gate/module/setMaterial Air
+/gate/module/vis/forceWireframe
+/gate/module/vis/setColor white
+
+# Cluster 
+/gate/module/daughters/name cluster
+/gate/module/daughters/insert box
+/gate/cluster/geometry/setXLength 1040. mm
+/gate/cluster/geometry/setYLength  1040. mm
+/gate/cluster/geometry/setZLength   2. mm
+/gate/cluster/setMaterial Air
+/gate/cluster/vis/forceWireframe
+/gate/cluster/vis/setColor white
+
+# Pixel 
+/gate/cluster/daughters/name pixel
+/gate/cluster/daughters/insert box
+/gate/pixel/geometry/setXLength 2.  mm
+/gate/pixel/geometry/setYLength 2. mm
+/gate/pixel/geometry/setZLength 2. mm
+/gate/pixel/setMaterial Silicon
+/gate/pixel/vis/forceSolid
+/gate/pixel/vis/setColor red
+/gate/pixel/repeaters/insert cubicArray
+/gate/pixel/cubicArray/setRepeatNumberX 520
+/gate/pixel/cubicArray/setRepeatNumberY 520
+/gate/pixel/cubicArray/setRepeatNumberZ  1
+/gate/pixel/cubicArray/setRepeatVector 2. 2. 0. mm
+
+
+
+
+/gate/geometry/rebuild

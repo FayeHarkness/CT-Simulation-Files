@@ -1,0 +1,36 @@
+/gate/world/daughters/name waterCylinder
+/gate/world/daughters/insert cylinder
+/gate/waterCylinder/geometry/setRmin 0. mm
+/gate/waterCylinder/geometry/setRmax 8. mm
+/gate/waterCylinder/geometry/setHeight 20. mm
+/gate/waterCylinder/setMaterial Water
+/gate/waterCylinder/vis/forceWireframe
+/gate/waterCylinder/vis/setColor cyan
+/gate/waterCylinder/placement/setRotationAxis 1 0 0
+/gate/waterCylinder/placement/setRotationAngle 90. deg
+
+/gate/waterCylinder/moves/insert rotation
+/gate/waterCylinder/rotation/setSpeed 1. deg/s
+/gate/waterCylinder/rotation/setAxis 0 0 1
+
+/gate/waterCylinder/daughters/name aluminiumBall
+/gate/waterCylinder/daughters/insert sphere
+/gate/aluminiumBall/placement/setTranslation  4. 0. 0. mm
+/gate/aluminiumBall/geometry/setRmin 0. mm
+/gate/aluminiumBall/geometry/setRmax 2. mm
+/gate/aluminiumBall/setMaterial Aluminium
+/gate/aluminiumBall/vis/forceSolid
+/gate/aluminiumBall/vis/setColor white
+/gate/waterCylinder/daughters/name spineBoneBall
+/gate/waterCylinder/daughters/insert sphere
+/gate/spineBoneBall/placement/setTranslation -4. 0. 0. mm
+/gate/spineBoneBall/geometry/setRmin 0. mm
+/gate/spineBoneBall/geometry/setRmax 2. mm
+/gate/spineBoneBall/setMaterial SpineBone
+/gate/spineBoneBall/vis/forceSolid
+/gate/spineBoneBall/vis/setColor yellow
+
+/gate/waterCylinder/attachPhantomSD
+/gate/aluminiumBall/attachPhantomSD
+/gate/spineBoneBall/attachPhantomSD
+

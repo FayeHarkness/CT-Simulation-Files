@@ -1,0 +1,12 @@
+
+
+# Specific CT Image output
+/gate/output/imageCT/enable
+#/gate/output/root/enable
+/gate/output/imageCT/setFileName /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/output/projections1/ct_projection
+#/gate/output/root/setFileName /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/output/root1/ct_root
+/gate/output/imageCT/verbose 0
+
+# VRT (variance reduction technique) for CT (the random seed is proper to the VRT module)
+/gate/output/imageCT/vrtFactor 40
+#/gate/output/imageCT/setStartSeed 1234

@@ -1,0 +1,17 @@
+/gate/world/daughters/name fash
+/gate/world/daughters/insert ImageRegularParametrisedVolume 
+/gate/fash/geometry/setImage /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/mash4.dcm
+/gate/fash/geometry/setRangeToMaterialFile /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/mac/mashrange.dat
+
+/gate/fash/attachPhantomSD
+
+/gate/fash/placement/setTranslation 0. 1. 0. mm
+/gate/fash/placement/setRotationAxis 1 0 0
+/gate/fash/placement/setRotationAngle 90. deg
+
+
+/gate/fash/moves/insert rotation
+/gate/fash/rotation/setSpeed 0.5 deg/s
+/gate/fash/rotation/setAxis 0 0 1
+
+/gate/fash/setSkipEqualMaterials 1

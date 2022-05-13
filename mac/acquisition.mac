@@ -1,0 +1,16 @@
+# JamesRandom Ranlux64 MersenneTwister
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+
+
+################################
+# ACQUISITION for 180 projections #
+################################
+/gate/application/setTimeSlice     2. s
+/gate/application/setTimeStart     0.  s
+/gate/application/setTimeStop      360. s
+
+
+#/gate/application/setTotalNumberOfPrimaries 900000000
+/gate/application/setNumberOfPrimariesPerRun 300000000
+/gate/application/start

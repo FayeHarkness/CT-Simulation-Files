@@ -1,0 +1,107 @@
+#Test Cube
+/gate/world/daughters/name Compactbox
+/gate/world/daughters/insert box
+/gate/Compactbox/geometry/setXLength  12. cm
+/gate/Compactbox/geometry/setYLength  20.0 cm
+/gate/Compactbox/geometry/setZLength  12. cm
+/gate/Compactbox/placement/setRotationAxis 1 0 0
+#/gate/Compactbox/placement/setRotationAngle 90. deg
+/gate/Compactbox/setMaterial Femurleft,compactbone
+/gate/Compactbox/vis/forceWireframe
+/gate/Compactbox/vis/setColor cyan
+
+/gate/Compactbox/moves/insert rotation
+/gate/Compactbox/rotation/setSpeed .5 deg/s
+/gate/Compactbox/rotation/setAxis 0 1 0
+
+/gate/Compactbox/daughters/name Spongybox
+/gate/Compactbox/daughters/insert box
+/gate/Spongybox/placement/setTranslation 0 0 0. cm
+/gate/Spongybox/geometry/setXLength  11. cm
+/gate/Spongybox/geometry/setYLength  19.0 cm
+/gate/Spongybox/geometry/setZLength  11. cm
+/gate/Spongybox/setMaterial Femurleft,spongiosaupperpart
+/gate/Spongybox/vis/forceWireframe
+/gate/Spongybox/vis/setColor white
+
+
+
+
+
+
+#Test cylinder with 2 bones surrounded by soft tissue with prostate and skin
+/gate/world/daughters/name Skin
+/gate/world/daughters/insert cylinder
+/gate/Skin/geometry/setRmin 0. cm
+/gate/Skin/geometry/setRmax 12.3 cm
+/gate/Skin/geometry/setHeight 10. cm
+/gate/Skin/placement/setRotationAxis 1 0 0
+/gate/Skin/placement/setRotationAngle 90. deg
+/gate/Skin/setMaterial Skin
+/gate/Skin/vis/forceWireframe
+/gate/Skin/vis/setColor white
+
+/gate/Skin/moves/insert rotation
+/gate/Skin/rotation/setSpeed .5 deg/s
+/gate/Skin/rotation/setAxis 0 0 1
+
+/gate/Skin/daughters/name Tissue
+/gate/Skin/daughters/insert cylinder
+/gate/Tissue/placement/setTranslation 0 0 0. cm
+/gate/Tissue/geometry/setRmin 0. cm
+/gate/Tissue/geometry/setRmax 12. cm
+/gate/Tissue/geometry/setHeight 10. cm
+/gate/Tissue/setMaterial Softtissue
+/gate/Tissue/vis/forceWireframe
+/gate/Tissue/vis/setColor cyan
+
+
+/gate/Tissue/daughters/name CompactBone
+/gate/Tissue/daughters/insert cylinder
+/gate/CompactBone/placement/setTranslation -6 0 0. cm
+/gate/CompactBone/geometry/setRmin 0. cm
+/gate/CompactBone/geometry/setRmax 2.5 cm
+/gate/CompactBone/geometry/setHeight 10. cm
+/gate/CompactBone/setMaterial Femurleft,compactbone
+/gate/CompactBone/vis/forceWireframe
+/gate/CompactBone/vis/setColor white
+
+/gate/Tissue/daughters/name Spongy
+/gate/Tissue/daughters/insert cylinder
+/gate/Spongy/placement/setTranslation -6 0 0. cm
+/gate/Spongy/geometry/setRmin 0. cm
+/gate/Spongy/geometry/setRmax 2.2 cm
+/gate/Spongy/geometry/setHeight 10. cm
+/gate/Spongy/setMaterial Femurleft,spongiosaupperpart
+/gate/Spongy/vis/setColor yellow
+
+
+/gate/Tissue/daughters/name Prostate
+/gate/Tissue/daughters/insert cylinder
+/gate/Prostate/placement/setTranslation 0 0 0. cm
+/gate/Prostate/geometry/setRmin 0. cm
+/gate/Prostate/geometry/setRmax 1.8 cm
+/gate/Prostate/geometry/setHeight 10. cm
+/gate/Prostate/setMaterial Prostate
+/gate/Prostate/vis/setColor red
+
+
+/gate/Tissue/daughters/name CompactBone2
+/gate/Tissue/daughters/insert cylinder
+/gate/CompactBone2/placement/setTranslation 6 0 0. cm
+/gate/CompactBone2/geometry/setRmin 0. cm
+/gate/CompactBone2/geometry/setRmax 2.5 cm
+/gate/CompactBone2/geometry/setHeight 10. cm
+/gate/CompactBone2/setMaterial Femurleft,compactbone
+/gate/CompactBone2/vis/forceWireframe
+/gate/CompactBone2/vis/setColor white
+
+/gate/Tissue/daughters/name Spongy2
+/gate/Tissue/daughters/insert cylinder
+/gate/Spongy2/placement/setTranslation 6 0 0. cm
+/gate/Spongy2/geometry/setRmin 0. cm
+/gate/Spongy2/geometry/setRmax 2.2 cm
+/gate/Spongy2/geometry/setHeight 10. cm
+/gate/Spongy2/setMaterial Femurleft,spongiosaupperpart
+/gate/Spongy2/vis/setColor yellow
+

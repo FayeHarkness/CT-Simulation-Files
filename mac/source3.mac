@@ -1,0 +1,20 @@
+/gate/source/addSource xraygun
+/gate/source/verbose 0
+
+/gate/source/xraygun/gps/verbose 0
+/gate/source/xraygun/gps/particle gamma
+/gate/source/xraygun/gps/energytype Mono
+/gate/source/xraygun/gps/monoenergy 120. keV
+
+
+
+#/gate/source/xraygun/gps/arbint Lin
+/gate/source/xraygun/gps/type Plane
+/gate/source/xraygun/gps/shape Rectangle
+/gate/source/xraygun/gps/halfx 0.25 mm
+/gate/source/xraygun/gps/halfy 0.25 mm
+/gate/source/xraygun/gps/mintheta 0.00 deg
+/gate/source/xraygun/gps/maxtheta 15.0 deg
+/gate/source/xraygun/gps/centre  0.00 0.00 -640.00 mm
+/gate/source/xraygun/gps/angtype iso
+/gate/source/list

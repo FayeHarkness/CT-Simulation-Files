@@ -1,0 +1,23 @@
+# Xray source (defined using a histogram to define the energy distribution)
+
+
+/gate/source/verbose 0
+/gate/source/addSource histogram gps
+/gate/source/histogram/gps/type Plane
+/gate/source/histogram/gps/shape Rectangle
+/gate/source/histogram/gps/halfx 0.025 mm
+/gate/source/histogram/gps/halfy 0.025 mm
+/gate/source/histogram/gps/centre 0. 0. -640. mm
+/gate/source/histogram/gps/mintheta  0. deg
+/gate/source/histogram/gps/maxtheta 14.2 deg
+/gate/source/histogram/gps/angtype iso
+
+
+/gate/source/histogram/gps/particle gamma
+/gate/source/histogram/gps/energytype UserSpectrum
+/gate/source/histogram/gps/setSpectrumFile mac/120keV.txt
+#/gate/source/histogram/setIntensity 10
+
+#/gate/source/xraygun/gps/arbint Lin
+/gate/source/list
+

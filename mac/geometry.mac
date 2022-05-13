@@ -1,0 +1,245 @@
+/gate/geometry/setMaterialDatabase /home/s1838834/GATE-build/Gate-8.2/FBCT_phantom_cluster/data/MashMaterialDatabase.db
+
+# World
+/gate/world/geometry/setXLength 1000. mm
+/gate/world/geometry/setYLength 1000. mm
+/gate/world/geometry/setZLength 1500. mm
+/gate/world/setMaterial Air
+/gate/world/vis/forceWireframe
+/gate/world/vis/setColor black
+
+
+
+#Bowtie filter
+
+/gate/world/daughters/name                wedge0
+/gate/world/daughters/insert              wedge
+/gate/wedge0/geometry/setXLength           100 mm
+/gate/wedge0/geometry/setNarrowerXLength   1. mm
+/gate/wedge0/geometry/setYLength           40. mm
+/gate/wedge0/geometry/setZLength           200. mm
+/gate/wedge0/setMaterial                   Aluminium
+/gate/wedge0/vis/forceSolid
+/gate/wedge0/vis/setColor                  yellow
+/gate/wedge0/placement/setTranslation -75. 0. -550. mm
+/gate/wedge0/placement/setRotationAxis 1 0 0
+/gate/wedge0/placement/setRotationAngle 90. deg
+
+/gate/world/daughters/name                wedge3
+/gate/world/daughters/insert              wedge
+/gate/wedge3/geometry/setXLength           100 mm
+/gate/wedge3/geometry/setNarrowerXLength   1. mm
+/gate/wedge3/geometry/setYLength           40. mm
+/gate/wedge3/geometry/setZLength           200. mm
+/gate/wedge3/setMaterial                   Aluminium
+/gate/wedge3/vis/forceSolid
+/gate/wedge3/vis/setColor                  yellow
+/gate/wedge3/placement/setTranslation -75. 0. -590.0 mm
+/gate/wedge3/placement/setRotationAxis 1 0 0
+/gate/wedge3/placement/setRotationAngle -90. deg
+
+/gate/world/daughters/name                wedge1
+/gate/world/daughters/insert              wedge
+/gate/wedge1/geometry/setXLength           100 mm
+/gate/wedge1/geometry/setNarrowerXLength   1. mm
+/gate/wedge1/geometry/setYLength           40. mm
+/gate/wedge1/geometry/setZLength           200. mm
+/gate/wedge1/setMaterial                   Aluminium
+/gate/wedge1/vis/forceSolid
+/gate/wedge1/vis/setColor                  yellow
+/gate/wedge1/placement/setTranslation 75. 0. -550. mm
+/gate/wedge1/placement/setRotationAxis 0 1 1
+/gate/wedge1/placement/setRotationAngle 180. deg
+
+/gate/world/daughters/name                wedge4
+/gate/world/daughters/insert              wedge
+/gate/wedge4/geometry/setXLength           100 mm
+/gate/wedge4/geometry/setNarrowerXLength   1. mm
+/gate/wedge4/geometry/setYLength           40. mm
+/gate/wedge4/geometry/setZLength           200. mm
+/gate/wedge4/setMaterial                   Aluminium
+/gate/wedge4/vis/forceSolid
+/gate/wedge4/vis/setColor                  yellow
+/gate/wedge4/placement/setTranslation 75. 0. -590. mm
+/gate/wedge4/placement/setRotationAxis 0 -1 1
+/gate/wedge4/placement/setRotationAngle 180. deg
+
+
+
+#Collimator1 at source
+/gate/world/daughters/name collimator1
+/gate/world/daughters/insert box
+/gate/collimator1/geometry/setXLength  60. cm
+/gate/collimator1/geometry/setYLength  30.0 cm
+/gate/collimator1/geometry/setZLength  5. cm
+/gate/collimator1/placement/setTranslation 0. 15.1 -60. cm
+/gate/collimator1/setMaterial Lead
+/gate/collimator1/vis/forceWireframe
+/gate/collimator1/vis/setColor blue
+
+/gate/world/daughters/name collimator2
+/gate/world/daughters/insert box
+/gate/collimator2/geometry/setXLength  60. cm
+/gate/collimator2/geometry/setYLength  30.0 cm
+/gate/collimator2/geometry/setZLength  5. cm
+/gate/collimator2/placement/setTranslation 0. -15.1 -60. cm
+/gate/collimator2/setMaterial Lead
+/gate/collimator2/vis/forceWireframe
+/gate/collimator2/vis/setColor blue
+
+#Collimator2 at source
+/gate/world/daughters/name collimator3
+/gate/world/daughters/insert box
+/gate/collimator3/geometry/setXLength  60. cm
+/gate/collimator3/geometry/setYLength  30.0 cm
+/gate/collimator3/geometry/setZLength  5. cm
+/gate/collimator3/placement/setTranslation 0. 15.1 -50. cm
+/gate/collimator3/setMaterial Lead
+/gate/collimator3/vis/forceWireframe
+/gate/collimator3/vis/setColor blue
+
+/gate/world/daughters/name collimator4
+/gate/world/daughters/insert box
+/gate/collimator4/geometry/setXLength  60. cm
+/gate/collimator4/geometry/setYLength  30.0 cm
+/gate/collimator4/geometry/setZLength  5. cm
+/gate/collimator4/placement/setTranslation 0. -15.1 -50. cm
+/gate/collimator4/setMaterial Lead
+/gate/collimator4/vis/forceWireframe
+/gate/collimator4/vis/setColor blue
+
+
+
+#Detector Collimator
+/gate/world/daughters/name collimator5
+/gate/world/daughters/insert box
+/gate/collimator5/geometry/setXLength  60. cm
+/gate/collimator5/geometry/setYLength  30.0 cm
+/gate/collimator5/geometry/setZLength  10. cm
+/gate/collimator5/placement/setTranslation 0. 15.05 34.5 cm
+/gate/collimator5/setMaterial Lead
+/gate/collimator5/vis/forceWireframe
+/gate/collimator5/vis/setColor blue
+
+/gate/world/daughters/name collimator6
+/gate/world/daughters/insert box
+/gate/collimator6/geometry/setXLength  60. cm
+/gate/collimator6/geometry/setYLength  30.0 cm
+/gate/collimator6/geometry/setZLength  10. cm
+/gate/collimator6/placement/setTranslation 0. -15.05 34.5 cm
+/gate/collimator6/setMaterial Lead
+/gate/collimator6/vis/forceWireframe
+/gate/collimator6/vis/setColor blue
+
+
+# CTscanner system 
+/gate/world/daughters/name CTscanner
+/gate/world/daughters/insert box
+/gate/CTscanner/geometry/setXLength  512. mm
+/gate/CTscanner/geometry/setYLength  10. mm
+/gate/CTscanner/geometry/setZLength   10. mm
+/gate/CTscanner/placement/setTranslation 0. 0. 40. cm
+/gate/CTscanner/setMaterial Air
+/gate/CTscanner/vis/forceWireframe
+/gate/CTscanner/vis/setColor white
+
+# Module 
+/gate/CTscanner/daughters/name module
+/gate/CTscanner/daughters/insert box
+/gate/module/geometry/setXLength  512. mm
+/gate/module/geometry/setYLength  10. mm
+/gate/module/geometry/setZLength   10. mm
+/gate/module/setMaterial Air
+/gate/module/vis/forceWireframe
+/gate/module/vis/setColor white
+
+# Cluster 
+/gate/module/daughters/name cluster
+/gate/module/daughters/insert box
+/gate/cluster/geometry/setXLength 512. mm
+/gate/cluster/geometry/setYLength   10. mm
+/gate/cluster/geometry/setZLength   10. mm
+/gate/cluster/setMaterial Air
+/gate/cluster/vis/forceWireframe
+/gate/cluster/vis/setColor white
+
+# Pixel 
+/gate/cluster/daughters/name pixel
+/gate/cluster/daughters/insert box
+/gate/pixel/geometry/setXLength 1.  mm
+/gate/pixel/geometry/setYLength 10. mm
+/gate/pixel/geometry/setZLength 10. mm
+/gate/pixel/setMaterial Silicon
+/gate/pixel/vis/forceSolid
+/gate/pixel/vis/setColor red
+/gate/pixel/repeaters/insert cubicArray
+/gate/pixel/cubicArray/setRepeatNumberX 512
+/gate/pixel/cubicArray/setRepeatNumberY 1
+/gate/pixel/cubicArray/setRepeatNumberZ  1
+/gate/pixel/cubicArray/setRepeatVector 1. 1. 0. mm
+
+/gate/systems/CTscanner/module/attach module
+/gate/systems/CTscanner/cluster_0/attach cluster
+/gate/systems/CTscanner/pixel_0/attach pixel
+
+/gate/pixel/attachCrystalSD
+
+
+
+
+#Test cylinder with 2 bones surrounded by soft tissue
+/gate/world/daughters/name Tissue
+/gate/world/daughters/insert cylinder
+/gate/Tissue/geometry/setRmin 0. cm
+/gate/Tissue/geometry/setRmax 10. cm
+/gate/Tissue/geometry/setHeight 10. cm
+/gate/Tissue/placement/setRotationAxis 1 0 0
+/gate/Tissue/placement/setRotationAngle 90. deg
+/gate/Tissue/setMaterial Softtissue
+/gate/Tissue/vis/forceWireframe
+/gate/Tissue/vis/setColor cyan
+
+/gate/Tissue/moves/insert rotation
+/gate/Tissue/rotation/setSpeed .5 deg/s
+/gate/Tissue/rotation/setAxis 0 0 1
+
+/gate/Tissue/daughters/name CompactBone
+/gate/Tissue/daughters/insert cylinder
+/gate/CompactBone/placement/setTranslation -5 0 0. cm
+/gate/CompactBone/geometry/setRmin 0. cm
+/gate/CompactBone/geometry/setRmax 2.5 cm
+/gate/CompactBone/geometry/setHeight 10. cm
+/gate/CompactBone/setMaterial Femurleft,compactbone
+/gate/CompactBone/vis/forceWireframe
+/gate/CompactBone/vis/setColor white
+
+/gate/Tissue/daughters/name Spongy
+/gate/Tissue/daughters/insert cylinder
+/gate/Spongy/placement/setTranslation -5 0 0. cm
+/gate/Spongy/geometry/setRmin 0. cm
+/gate/Spongy/geometry/setRmax 2.2 cm
+/gate/Spongy/geometry/setHeight 10. cm
+/gate/Spongy/setMaterial Femurleft,spongiosaupperpart
+/gate/Spongy/vis/setColor yellow
+
+/gate/Tissue/daughters/name CompactBone2
+/gate/Tissue/daughters/insert cylinder
+/gate/CompactBone2/placement/setTranslation 5 0 0. cm
+/gate/CompactBone2/geometry/setRmin 0. cm
+/gate/CompactBone2/geometry/setRmax 2.5 cm
+/gate/CompactBone2/geometry/setHeight 10. cm
+/gate/CompactBone2/setMaterial Femurleft,compactbone
+/gate/CompactBone2/vis/forceWireframe
+/gate/CompactBone2/vis/setColor white
+
+/gate/Tissue/daughters/name Spongy2
+/gate/Tissue/daughters/insert cylinder
+/gate/Spongy2/placement/setTranslation 5 0 0. cm
+/gate/Spongy2/geometry/setRmin 0. cm
+/gate/Spongy2/geometry/setRmax 2.2 cm
+/gate/Spongy2/geometry/setHeight 10. cm
+/gate/Spongy2/setMaterial Femurleft,spongiosaupperpart
+/gate/Spongy2/vis/setColor yellow
+
+
+

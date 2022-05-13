@@ -1,0 +1,63 @@
+/control/execute mac/verbose.mac
+
+#=====================================================
+# GEOMETRY
+#=====================================================
+
+/control/execute mac/geometry.mac
+
+# Phantom 
+#/control/execute mac/fash.mac
+#=====================================================
+# PHYSICS
+#=====================================================
+
+/control/execute mac/physics.mac
+
+#=====================================================
+# SIMULATION STATISTICS
+#=====================================================
+
+#/gate/actor/addActor   SimulationStatisticActor stat
+#/gate/actor/stat/save  output/stat-ct.txt
+
+#=====================================================
+# INITIALISATION
+#=====================================================
+
+/gate/run/initialize
+
+#=====================================================
+# DIGITIZER 
+#=====================================================
+
+/gate/digitizer/Singles/insert adder
+/gate/digitizer/Singles/insert readout
+/gate/digitizer/Singles/readout/setDepth 2
+/gate/digitizer/Singles/insert thresholder
+/gate/digitizer/Singles/thresholder/setThreshold 10 keV
+
+#=====================================================
+# SOURCE 
+#=====================================================
+
+/control/execute mac/source4.mac
+
+
+#=====================================================
+# VISUALISATION
+#=====================================================
+
+#/control/execute mac/viewer.mac
+
+#=====================================================
+# OUTPUTS
+#=====================================================
+
+/control/execute mac/output.mac
+
+#=====================================================
+# START ACQUISITION
+#=====================================================
+
+/control/execute mac/acquisition.mac
